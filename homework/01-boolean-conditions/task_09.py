@@ -41,3 +41,8 @@
 #     True
 
 # Решение
+
+tovar1=1500
+tovar2=300
+cupon_active=(tovar1 > 1000) != (tovar2 > 1000)
+print(cupon_active)

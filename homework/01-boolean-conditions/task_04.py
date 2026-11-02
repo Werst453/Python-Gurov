@@ -44,3 +44,11 @@
 #     Позвонить покупателю: False
 
 # Решение
+
+order_payed="no" 
+order_here="yes"
+have_adress="no"
+can_send = (order_payed + order_here + have_adress) == True
+print(f"Можно отправлять: {can_send}")
+need_call = (order_payed + have_adress) == False
+print(f"Позвонить покупателю: {need_call}")

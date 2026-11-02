@@ -42,8 +42,10 @@
 #     Подходит: True
 
 # Решение: исправьте программу ниже
-age = int(input("Возраст: "))
-answer = input("Опыт работы есть (да/нет): ")
-has_experience = answer = "да"
-fits = age >= 18 and <= 65 and has_experience
-print("Подходит:" fits)
+
+age=30
+has_expirience="да"
+age_check= age > 18 and age < 65
+expirience= has_expirience
+total_check= age >18 and age < 65 and has_expirience
+print(f"Подходит: {total_check}")

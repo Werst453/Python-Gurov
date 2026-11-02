@@ -33,3 +33,7 @@
 #     False
 
 # Решение
+
+year=2024
+is_visokosn=(year % 4 == 0) - (year % 100 == 0) + (year % 400 == 0) > 0
+print(is_visokosn)

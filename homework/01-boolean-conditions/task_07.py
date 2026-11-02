@@ -28,3 +28,7 @@
 #     False
 
 # Решение
+
+bottles=48
+can_ship= (bottles % 6==0) and (bottles % 4==0)
+print(can_ship)

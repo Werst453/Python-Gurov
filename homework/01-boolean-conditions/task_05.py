@@ -31,3 +31,17 @@
 #     Сессия закрыта: False
 
 # Решение
+
+score1=50
+score2=40
+score3=90
+
+passed1=score1 > 40
+passed2=score2 >= 40
+passed3=score3 >= 40
+
+total_passed= passed1 + passed2 + passed3
+sessions_closed= total_passed == 3
+
+print(f"Сдано экзаменов: {total_passed}")
+print(f"Сессия закрыта: {sessions_closed}")

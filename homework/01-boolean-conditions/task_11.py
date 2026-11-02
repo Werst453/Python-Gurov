@@ -49,3 +49,10 @@
 #     False
 
 # Решение
+
+kassa1="нет"
+kassa2="да"
+kassa3="нет"
+opened_count = (kassa1 == "нет") + (kassa2 == "да") + (kassa3 == "нет")
+result= opened_count == 1
+print(result)

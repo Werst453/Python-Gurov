@@ -39,3 +39,9 @@
 #     False
 
 # Решение
+
+ost_tovara=5
+cost=1200
+summ=1500
+can_buy= ost_tovara > 0 and summ >= cost 
+print(can_buy)

@@ -50,3 +50,11 @@
 #     Можно на аттракцион: False
 
 # Решение
+
+rost=130
+age=12
+is_elder_here=False
+is_rost_okay=120<rost
+is_age_okay=10<age
+can_come=True
+print(f"Можно на аттракцион: {can_come}")

@@ -49,3 +49,9 @@
 #     Допущен: False
 
 # Решение
+
+posehaemost=80
+labarator_work=8
+payment_dolg=0
+dopusk = posehaemost > 75 and labarator_work >= 8 and payment_dolg <= 0
+print(dopusk)

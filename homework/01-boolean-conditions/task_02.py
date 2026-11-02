@@ -30,3 +30,9 @@
 #     Полный билет: False
 
 # Решение
+
+age=12
+is_full = 18 <= age < 65
+is_discount = is_full != True
+print("Льготный билет:", is_discount)
+print("Полный билет:", is_full)
