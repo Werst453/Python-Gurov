@@ -43,3 +43,15 @@
 #     К оплате: 170 руб.
 
 # Решение
+have_subscription=input("Подписка есть (да/нет): ")
+time=int(input("Длительность поездки, мин: "))
+
+if have_subscription == "да":
+    if time <= 30:
+        print("Поездка входит в оплату")
+    else:
+        over_time=(time - 30)* 5
+        print(f"К оплате: {over_time} руб.")
+else:
+    over_time=50 + time * 8
+    print(f"К оплате: {over_time} руб.")

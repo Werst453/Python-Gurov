@@ -58,3 +58,23 @@
 #     Нужно сдать в багаж
 
 # Решение
+length = int(40)
+width = int(30)
+height = int(15)
+weight = float(10.5)
+
+can_take=True
+
+if length > 55:
+    can_take = False
+if width > 40:
+    can_take =  False
+if height > 20:
+    can_take = False
+if weight >10.0:
+    can_take = False
+
+if can_take:
+    print("Можно взять в салон")
+else:
+    print("Нужно сдать багаж")

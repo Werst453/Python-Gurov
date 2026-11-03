@@ -51,3 +51,20 @@
 #     Штраф: 5000 руб.
 
 # Решение
+normal_speed=int(input("Разрешённая скорость, км/ч: "))
+actual_speed=int(input("Фактическая скорость, км/ч: "))
+
+over_speed= actual_speed - normal_speed
+
+if over_speed <= 20:
+    bill = 0
+elif over_speed <= 40:
+    bill = 750
+elif over_speed <= 60:
+    bill = 1500
+elif over_speed <= 80:
+    bill = 2500
+else:
+    bill = 5000
+
+print(f"Щтраф: {bill} руб.")

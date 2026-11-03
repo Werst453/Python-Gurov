@@ -34,3 +34,11 @@
 #     Снизьте давление
 
 # Решение
+davlenie=float(input("Давление, бар: "))
+
+if davlenie < 2.2:
+    print("Подкачайте шины")
+elif davlenie <= 2.5:
+    print("Давление в норме")
+else:
+    print("Снизьте давление")
