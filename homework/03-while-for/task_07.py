@@ -42,9 +42,15 @@
 # Решение: исправьте программу ниже
 total = 0
 count = 0
-number = int(input("Число (0 — конец): "))
-while number != 0
-    total += number
-    count =+ 1
-print("Сумма:", total)
-print("Количество:", count)
+
+while True:
+    grade = int(input('Оценка (0 — конец): '))
+    if grade == 0:
+        break
+    total += grade
+    count += 1
+
+if count == 0:
+    print('Оценок нет')
+else:
+    print(f'Средний балл: {total / count:.2f}')

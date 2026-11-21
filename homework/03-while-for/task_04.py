@@ -27,3 +27,9 @@
 #     Сумма цифр: 3
 
 # Решение
+number=int(input("Номер заказа "))
+digits_sum=0
+while number > 0:
+    digits_sum += number %10
+    number //10
+print(f"Сумма цифр: {digits_sum}")

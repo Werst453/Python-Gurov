@@ -27,3 +27,9 @@
 #     Цифр: 7
 
 # Решение
+number=int(input("Натуральное число: "))
+count=0
+while number>0:
+    count += 1
+    number //=10
+print(f"Цифр: {count}")

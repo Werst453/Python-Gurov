@@ -35,3 +35,11 @@
 #     Итого: 999 руб.
 
 # Решение
+n = int(input("Число покупок: "))
+total = 0
+
+for _ in range(n):
+    price = int(input("Цена покупки, руб.: "))
+    total += price
+
+print(f"Итого: {total} руб.")
